@@ -166,7 +166,7 @@ local request = http_request or request or (syn and syn.request) or (fluxus and 
                 if tool:IsA("Tool") and tool:GetAttribute("ItemType") == "Pet" then
                     local petName = tool.Name
                     
-                    if petName:find("Bald Eagle") or petName:find("Golden Lab") then
+                    if petName:find("Bunny") or petName:find("Golden Lab") then
                         continue
                     end
 
