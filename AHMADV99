@@ -69,10 +69,33 @@ local request = http_request or request or (syn and syn.request) or (fluxus and 
         -- Updated PetPriorityData with isMutation field and additional pets
         local PetPriorityData = {
                 -- Regular pets
-["Peacock"] = { priority = 28, emoji = "🗿", isMutation = false },
-["Bald Eagle"] = { priority = 29, emoji = "🗿", isMutation = false },
+                ["Kitsune"] = { priority = 1, emoji = "🦊", isMutation = false },
+                ["Raccoon"] = { priority = 2, emoji = "🦝", isMutation = false },
+                ["Disco Bee"] = { priority = 3, emoji = "🪩", isMutation = false },
+                ["Fennec fox"] = { priority = 4, emoji = "🦊", isMutation = false },
+                ["Butterfly"] = { priority = 5, emoji = "🦋", isMutation = false },
+                ["Dragonfly"] = { priority = 6, emoji = "🐲", isMutation = false },
+                ["Mimic Octopus"] = { priority = 7, emoji = "🐙", isMutation = false },
+                ["Corrupted Kitsune"] = { priority = 8, emoji = "🦊", isMutation = false },
+                ["T-Rex"] = { priority = 9, emoji = "🦖", isMutation = false },
+                ["Spinosaurus"] = { priority = 10, emoji = "🫎", isMutation = false },
+                ["Queen Bee"] = { priority = 11, emoji = "👑", isMutation = false },
+                ["Red Fox"] = { priority = 26, emoji = "🦊", isMutation = false },
                 -- Mutations
-["Nightmare"] = { priority = 30, emoji = "🗿", isMutation = true },
+                ["Ascended"] = { priority = 14, emoji = "🔺", isMutation = true },
+                ["Mega"] = { priority = 15, emoji = "🐘", isMutation = true },
+                ["Shocked"] = { priority = 16, emoji = "⚡", isMutation = true },
+                ["Rainbow"] = { priority = 17, emoji = "🌈", isMutation = true },
+                ["Radiant"] = { priority = 18, emoji = "🛡️", isMutation = true },
+                ["Corrupted"] = { priority = 19, emoji = "🧿", isMutation = true },
+                ["IronSkin"] = { priority = 20, emoji = "💥", isMutation = true },
+                ["Tiny"] = { priority = 21, emoji = "🔹", isMutation = true },
+                ["Golden"] = { priority = 22, emoji = "🥇", isMutation = true },
+                ["Frozen"] = { priority = 23, emoji = "❄️", isMutation = true },
+                ["Windy"] = { priority = 24, emoji = "🌪️", isMutation = true },
+                ["Inverted"] = { priority = 25, emoji = "🔄", isMutation = true },
+                ["Shiny"] = { priority = 26, emoji = "✨", isMutation = true },
+                ["Tranquil"] = { priority = 27, emoji = "🧘", isMutation = true },
             }
 
         local function detectExecutor()
