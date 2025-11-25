@@ -744,6 +744,7 @@ local PetWhitelist = {
    ["Rainbow Pachycephalosaurus"] = true,
    ["Ghostly Spider"] = true,
    ["Ghostly Headless Horseman"] = true,
+["Echo Frog"] = true,
    
    
 }
